@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css"/>
+    <title>Cadastro</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo" >Cadastro</h1>
+        <p id="subtitulo" >Complete suas informações</p>
+        <br/>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div>
+                <label for="nome" ><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome">
+            </div>
+            <div id="sobrenome" >
+                <label for="sobrenome" ><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome">
+            </div>
+        </fieldset>
+        <div id="email">
+            <label for="email" ><strong>Email</strong></label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div id="treinos" >
+            <label><strong>Dias de Treino</strong> </label>
+            <div id="conteiner-treino">
+                <div>
+            <label>
+                <input type="radio" name="segunda" seg>Segunda
+            </label>
+            <label>
+                <input type="radio" name="terca" seg>Terça
+            </label>
+            <label>
+                <input type="radio" name="quarta" seg>Quarta
+            </label>
+            <label>
+                <input type="radio" name="quinta" seg>Quinta
+            </label>
+                </div>
+                <div>
+            <label>
+                <input type="radio" name="sexta" seg>Sexta
+            </label>
+            <label>
+                <input type="radio" name="sabado" seg>Sabado
+            </label>
+            <label>
+                <input type="radio" name="domingo" seg>Domingo
+            </label>
+                </div>
+        </div>
+        </div>
+        <div>
+            <label id="biotipo"><strong> Biotipo</strong></label>
+            <select id="biotipo">
+                <option selected disabled value="">Selecione</option>
+                <option>Ectomorfo</option>
+                <option>Endomorfo</option>
+                <option>Mesomorfo</option>
+            </select>
+        </div>
+        <fieldset class="grupo">
+            <div>
+                <label><strong>Faz uso de Suplementos, Quais?</strong></label><br/>
+                <div class="suplemento">
+                    <input type="checkbox" id="whey" name="whey" value="whey"/>
+                    <label for="whey">Whey</label>
+                    <input type="checkbox" id="creatina" name="creatina" value="creatina"/>
+                    <label for="creatina">Creatina</label>
+                    <input type="checkbox" id="albumina" name="albumina" value="albumina"/>
+                    <label for="albumina">Albumina</label>
+                    <input type="checkbox" id="bcaa" name="bcaa" value="bcaa"/>
+                    <label for="bcaa">BCAA</label>
+                    <input type="checkbox" id="betalanina" name="betalanina" value="betalanina"/>
+                    <label for="betalanina">Betalanina</label>
+                </div>
+            </div>
+        </fieldset>
+        <div>
+            <br/>
+            <label><strong>Conte um pouco de sua experiencia:</strong></label>
+            <textarea rows="6" style="width: 40em" id="experencia" name="experiencia"></textarea>
+        </div>
+        <button class="botao" type="submit">Concluido</button>
+    </form>
+</body>
+</html>
